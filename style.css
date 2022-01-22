@@ -1,0 +1,123 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-BG);
+    padding: 20px;
+}
+
+/* IMG */
+.img {
+    background: url('./images/image-equilibrium.jpg') no-repeat center/cover;
+    height: 300px;
+    border-radius: 15px;
+}
+.img-overlay {
+    background: hsl(178, 100%, 50%, 0.7);
+    height: 300px;
+    display: none;
+}
+
+/* Container */
+.container {
+    padding: 25px;
+    background-color: var(--card-BG);
+    border-radius: 15px;
+}
+.container p {
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--Soft-blue);
+}
+.container h3 {
+    margin-top: 20px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: var(--White);
+}
+.container ul h4 {
+    color: var(--Cyan);
+}
+.container ul{
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.container ul .days {
+    color: var(--Soft-blue);
+}
+.container span {
+    color: var(--Cyan);
+}
+.container .images img {
+    width: 40px;
+}
+.container hr {
+    border: 1px solid var(--line);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.container .images {
+    display: flex;
+    align-items: center;
+}
+.container .images {
+    color: var(--Soft-blue);
+}
+.container .images span {
+    color: var(--White);
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+}
+.container ul li img {
+    margin-right: 10px;
+}
+
+@media (min-width: 375px) {
+    .container {
+        width: 350px;
+    }
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+    }
+}
+@media (max-width: 800) {
+    body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        align-items: center;
+    }
+}
